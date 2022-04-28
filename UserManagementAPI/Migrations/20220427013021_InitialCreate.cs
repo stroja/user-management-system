@@ -78,7 +78,7 @@ namespace UserManagementAPI.Migrations
                     { 7, "kerimsarajlic@gmail.com", "Kerim", "Sarajlic", "password123", true, "kerimsarajlic" },
                     { 8, "milanmilanovic@gmail.com", "Milan", "Milanovic", "password123", true, "mmilanovic" }
                 });
-
+   
             migrationBuilder.CreateIndex(
                 name: "IX_UserPermissions_PermissionId",
                 table: "UserPermissions",
