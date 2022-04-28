@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="form">
+        <div class="row">
+            <label>First Name:</label>
+            <input class="field" [(ngModel)]="user.firstName">
+        </div>
+        <div class="row">
+            <label>Last Name:</label>
+            <input class="field" [(ngModel)]="user.lastName">
+        </div>
+        <div class="row">
+            <label>Email:</label>
+            <input class="field" [(ngModel)]="user.emailAddress">
+        </div>
+        <div class="row">
+            <label>Status:</label>
+            <input class="field" [(ngModel)]="user.status">
+        </div>
+        <div class="row" *ngIf="user.id == 0">
+            <label>Password:</label>
+            <input class="field" type="password" [(ngModel)]="user.password">
+        </div>
+        <div class="row" *ngIf="user.id == 0">
+            <label>Username:</label>
+            <input class="field" [(ngModel)]="user.userName">
+        </div>
+        <div class="row">
+            <label>Role:</label>
+            <input class="field"> 
+        </div>
+    </div>
+    <div class="footer">
+        <button id="save" (click)="save()">Save</button>
+        <button id="cancel" (click)="cancel()">Cancel</button>
+    </div>
+</div>

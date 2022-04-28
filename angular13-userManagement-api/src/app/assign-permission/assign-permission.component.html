@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="form">
+        <ng-multiselect-dropdown [settings]="dropdownSettings" [data]="dropdownList" [(ngModel)]="selectedItems"
+            (onSelect)="onItemSelect($event)" (onSelectAll)="onSelectAll($event)">
+        </ng-multiselect-dropdown>
+    </div>
+
+    <div class="footer">
+        <button id="save" (click)="save()">Save</button>
+        <button id="cancel" (click)="cancel()">Cancel</button>
+    </div>
+</div>
